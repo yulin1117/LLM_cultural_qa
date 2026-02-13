@@ -32,7 +32,19 @@ pip install pandas numpy matplotlib tqdm
 2. For RAG functionality, set your Serper API key in `script/search_context.py`
 
 ## Methodology
-![Workflow](results/F1.png)
+### 1. Fine-Tuning (SFT)
+We utilized **QLoRA** (4-bit quantization) to maintain computational efficiency on the Alpha Cluster (HPC).
+- **Rank**: 16 / 32 / 64 (Ablation study)
+- **Alpha**: 32
+- **Target Modules**: All-linear layers coverage.
+
+### 2. RAG Framework
+- **Search API**: Serper.dev for real-time cultural context.
+- **Re-ranking**: Hybrid approach combining lexical and semantic signals to mitigate hallucinations.
+### 3. Workflow
+<p align="center">
+  <img src="results/F1.png" width="600" title="Loss Curve">
+</p>
 
 ## Model
 
