@@ -69,6 +69,6 @@ Our experimental results provide critical insights into adapting Large Language 
 * **📚 RAG & Context Strategy**: Retrieval-Augmented Generation (RAG) is indispensable for factual grounding. The **Full Context** strategy achieved the lowest training loss, providing the best evidentiary support for long-tail cultural facts.
 ![RAG](results/E4.png)
 * **🔄 Cross-Task Synergies**: Sequential fine-tuning (SAQ ↔ MCQ) significantly outperformed single-task optimization. This cross-task reinforcement allowed the model to leverage task-specific knowledge transfer effectively.
-![Cross_Task](results/E5)
+![Cross_Task](results/E5.png)
 
 
